@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지구학교 재단 | EarthSchool Foundation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Jua&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #333;
+      background-color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(255, 182, 193, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-family: 'Jua', sans-serif;
+      color: #ff69b4;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #ffe4e1;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    section h2 {
+      font-family: 'Jua', sans-serif;
+      font-size: 2.5em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 700px;
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .intro {
+      background: linear-gradient(to bottom right, #ffe4f2, #fff);
+    }
+
+    .activity {
+      background: linear-gradient(to bottom right, #fff0f5, #fdfdfd);
+    }
+
+    .campaign {
+      background: linear-gradient(to bottom right, #fff, #ffe6ec);
+    }
+
+    .news {
+      background: linear-gradient(to bottom right, #fff5f8, #fff);
+    }
+
+    .support {
+      background: linear-gradient(to bottom right, #ffeaf2, #fff);
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #ffb6c1;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff69b4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #fff0f5;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    footer span {
+      color: #ff69b4;
+      font-weight: bold;
+    }
+
+    /* Smooth scroll animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📘 지구학교 재단</h1>
+    <nav>
+      <a href="#intro">소개</a>
+      <a href="#activity">핵심활동</a>
+      <a href="#campaign">캠페인참여</a>
+      <a href="#news">뉴스·스토리</a>
+      <a href="#support">후원·문의</a>
+    </nav>
+  </header>
+
+  <section id="intro" class="intro fade-in">
+    <h2>배움으로 지구를 구하다</h2>
+    <p>
+      지구학교 재단(EarthSchool Foundation)은 청소년이 주도하는 환경교육 비영리 재단입니다.  
+      우리는 배움을 통해 지구의 지속가능한 미래를 만들고, 학교별 환경 리더를 양성합니다.
+    </p>
+  </section>
+
+  <section id="activity" class="activity fade-in">
+    <h2>🌱 핵심 활동</h2>
+    <p>
+      - 청소년 대상 환경 교육 워크숍 운영<br>
+      - 학교별 친환경 프로젝트(분리배출, 탄소중립 실천)<br>
+      - 지역 사회와 연계한 환경 리더 양성 캠프
+    </p>
+    <button>활동 더보기</button>
+  </section>
+
+  <section id="campaign" class="campaign fade-in">
+    <h2>🌍 캠페인 참여</h2>
+    <p>
+      우리와 함께 “작은 행동으로 지구를 바꾸는 캠페인”에 참여하세요!  
+      매월 진행되는 미션을 통해 학교, 친구들과 함께 지구를 지킬 수 있습니다.
+    </p>
+    <button>참여하기</button>
+  </section>
+
+  <section id="news" class="news fade-in">
+    <h2>📰 뉴스 / 스토리</h2>
+    <p>
+      환경을 사랑하는 청소년들의 이야기, 학교 현장의 생생한 변화,  
+      그리고 지구학교 재단이 만든 따뜻한 프로젝트 소식을 만나보세요.
+    </p>
+    <button>스토리 보기</button>
+  </section>
+
+  <section id="support" class="support fade-in">
+    <h2>💖 후원 / 문의</h2>
+    <p>
+      우리의 활동을 후원하거나 문의하고 싶다면 아래 버튼을 눌러주세요.  
+      여러분의 관심이 지구의 희망이 됩니다.
+    </p>
+    <button>후원 / 문의하기</button>
+  </section>
+
+  <footer>
+    © 2025 <span>김보아</span>. All Rights Reserved.  
+    지구학교 재단(EarthSchool Foundation)의 지적 소유권은 김보아에게 있습니다.
+  </footer>
+
+  <script>
+    // Fade-in 스크롤 애니메이션
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
